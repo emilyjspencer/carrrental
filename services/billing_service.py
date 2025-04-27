@@ -26,6 +26,9 @@ def handle_rental_request(event: RentalRequestCreated):
 
     if vehicle.year_of_production < 2016:  # if the vehicle is quite old - deduct money
         base_price -= 15
+        
+    if vehicle.mileage > 100000:  # if the vehicle's mileage is over 100,000, £20 is deducted
+        base_price -= 20
 
     total_price = base_price * event.days_requested
 
