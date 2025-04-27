@@ -9,19 +9,19 @@ from services.assignment_service import AssignmentService
 
 # unhappy path = the driver has 5 violations so not eligible to hire a car
 vehicle = Vehicle(
-    vehicle_id="V001",
+    vehicle_id="V002",
     manufacturer="Toyota",
     model="Corolla",
     basic_cost_to_hire=100,
-    year_of_production=2018,
-    mileage=30000
+    year_of_production=2019,
+    mileage=60000
 )
 
 driver = Driver(
-    driver_id="D001",
+    driver_id="D002",
     name="John Doe",
     date_of_birth="1985-10-25",
-    driving_licence_number="ABCD1234"
+    driving_licence_number="ABWQ1234"
 )
 
 billing_service.vehicles[vehicle.vehicle_id] = vehicle
