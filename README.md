@@ -3,7 +3,7 @@
 # Entities
 * Driver
 * Vehicle
-* RentalRequest
+
 
 Explanation: each is uniquely identifiable by their respective ids driver_id, vehicle_id, rentalrequest_id
 
