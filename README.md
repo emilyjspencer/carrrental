@@ -49,3 +49,19 @@ I decided that an event-driven system would be cleaner, enabling loose coupling 
 Additionally, the system is more extensible; it is easier to extend functionality.
 The events in this system are RentalRequestCreated, DriverStatusChanged, VehicleStatusChanged
 
+
+# Instructions
+
+I have two files which can be run:
+
+* main.py - for the unhappy path e.g. a user who has too many violations to be allowed to hire a car
+* main2.py - for the happy patth - e.g. two users who are eligible to hire a car.
+
+To run:
+
+```
+python main.py
+
+python main2.py
+```
+
