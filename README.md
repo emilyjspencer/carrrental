@@ -43,3 +43,9 @@ Explanation: the values shouldn't change, just as days of the week don't change 
 * If the car's mileage is > 100,000, £20 is deducted
 
 
+# Event-driven architecture
+
+I decided that an event-driven system would be cleaner, enabling loose coupling because rather than components directly calling each other, they instead react to events (messages) that are published. The components therefore don't need to know about each other directly.
+Additionally, the system is more extensible; it is easier to extend functionality.
+The events in this system are RentalRequestCreated, DriverStatusChanged, VehicleStatusChanged
+
