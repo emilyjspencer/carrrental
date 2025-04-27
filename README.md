@@ -5,12 +5,21 @@
 * Vehicle
 * RentalRequest
 
-# Value objects
-* VehicleStatus e.g. Assigned, Needs maintenance, Availabble
+Explanation: each is uniquely identifiable by their respective ids driver_id, vehicle_id, rentalrequest_id
+
+# Value objects - there are enums 
+* VehicleStatus e.g. Assigned, Needs maintenance, Available
 * DriverStatus e.g. Banned, Active
 
+Explanation: the values shouldn't change, just as days of the week don't change - so enumas have been used.
+
+
 # Aggregates
-* Rental Request - combination of driver and vehicle
+* Rental Request - combination of driver and vehicle information
+
+# Services
+* Billing service - calculates the cost of hiring a car
+* Assignment service - assigns a driver to a car, and verifies that the user can be assigned or not - if they aren't eligible to hire a car, then they will not be assigned a vehicle.
 
 # Bounded Contexts
 
